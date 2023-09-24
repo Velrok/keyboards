@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cp output/*.uf2 /Volumes/RPI-RP2
+cp ./output/*.uf2 /Volumes/RPI-RP2
