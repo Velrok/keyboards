@@ -1,2 +1,11 @@
 #!/usr/bin/env bash
-cp ./output/*.uf2 /Volumes/RPI-RP2
+
+ROM='/Volumes/RPI-RP2'
+
+until [ -d $ROM ]
+do
+  echo wait for $ROM
+  sleep 1
+done
+
+cp ./output/*.uf2 $ROM
